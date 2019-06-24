@@ -8,11 +8,13 @@ const NewsList = (props) =>{
     const items = props.news.map((item)=>{
         return(
             <NewsListItems key={item.id} item={item}/>
+        
         )
     })
     
     return (
         <div>
+            {props.children}
             {items}
         </div>
     )
